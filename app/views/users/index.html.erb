@@ -1,4 +1,5 @@
 <% @users.each do | user | %>
+    <div class="container">
     <div class="all-user-container">
     <div class="user-img-container">
     <img src="<%= user.photo %>" />
@@ -8,6 +9,7 @@
     <h3><%= user.first_name %> <%= user.last_name %></h3>
     <h4><%= user.email %></h4>
     <p><%= user.address %></p>
+    </div>
     </div>
     </div>
     <% end %>
